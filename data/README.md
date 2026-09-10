@@ -27,3 +27,22 @@ Laboratory (GML). <https://gml.noaa.gov/ccgg/trends/>.
 * `ghg_emissions_state_sector.csv`: annual greenhouse gas emissions broken out by state, sector, and specific greenhouse gas. Reported as teragrams (Tg, million metric tons) of CO₂-equivalent. Downloaded from the [U.S. EPA GHG inventor](https://www.epa.gov/ghgemissions/methodology-report-inventory-us-greenhouse-gas-emissions-and-sinks-state-1990-2022
 )
 
+---
+
+## Lab 2 — Analyzing Historical Temperature Trends
+
+Notebook: `Lab2_Analyzing_Historical_Temperature_Trends.ipynb`
+
+### Global gridded temperature data
+
+Gridded (5° x 5°) annual surface temperature anomalies calculated from NOAA's Global Surface Temperature
+dataset (version 6.1) <https://www.psl.noaa.gov/data/gridded/data.noaaglobaltemp.html>
+
+* `noaa_global_temperature_annual.nc`: annual mean temperature anomaly
+
+### Colorado gridded temperature and elevation data (PRISM)
+
+4km resolution gridded climate data for Colorado calculated from the PRISM dataset <https://prism.oregonstate.edu/>
+
+* `PRISM_tmean_annual_CO_1895_2025.nc`: annual mean temperature (°C), 1895–2025 within Colorado
+
