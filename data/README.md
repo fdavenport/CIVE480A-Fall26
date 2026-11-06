@@ -48,6 +48,25 @@ dataset (version 6.1) <https://www.psl.noaa.gov/data/gridded/data.noaaglobaltemp
 
 ---
 
+## Lab 3 — Hydrologic Cycle Changes
+
+Notebook: `Lab3_Hydrologic_Cycle_Changes.ipynb`
+
+### SNOTEL snow water equivalent, Elk River, CO
+
+Daily snow water equivalent (SWE) measured at the Elk River SNOTEL station (site 467), north of Steamboat Springs in Routt County, CO. SNOTEL (Snow Telemetry) is an automated snow monitoring network run by the USDA Natural Resources Conservation Service (NRCS) across the western U.S. <https://www.nrcs.usda.gov/wps/portal/wcc/home/aboutUs/monitoringPrograms/automatedSnowMonitoring/>. Station page: <https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=467>
+
+SWE is the depth of water that would result if the snowpack were melted.
+
+* `Elk_River_SNOTEL_SWE.csv`: daily SWE at the Elk River station
+  * 17,529 daily values from 1978-10-01 to 2026-09-28 (water years 1979–2026; no missing values)
+  * Columns:
+    * `Date`: date in YYYY-MM-DD format
+    * `Water Year`: water year (October 1 – September 30) that the date belongs to, e.g. 1978-10-01 is in water year 1979
+    * `Snow Water Equivalent (in)`: snow water equivalent in inches. Values range from 0 to 30.8
+
+---
+
 ## Lab 4 — Analyzing Extreme Fire Weather
 
 Notebook: `Lab4_Extreme_Fire_Weather.ipynb`
@@ -86,5 +105,20 @@ Files used in the lab (block maxima):
 Original files (not used in the lab):
 
 * `hurricane_winds_2015_Mobile-AL.csv` and `hurricane_winds_2100_Mobile-AL.csv`: annual maximum wind speed (m/s) in each simulated year that has a hurricane (column `max_wind`; 9,730 and 9,709 rows)
+
+
+
+## Lab 6 — Future Climate Projections and Building Energy Use
+
+Notebook: `Lab6_Future_Climate_Projections.ipynb`
+
+### CMIP6 annual mean temperature projections for Chicago, IL
+
+Annual mean temperature from CMIP6 climate model simulations for the model grid cell closest to Chicago, IL (41.25°N, 271.25°E; the models have a 2.5° resolution), for the years 2015–2099. Each file has one dimension, `year`, and one variable, `meanT`, in °C as an anomaly relative to the 1985–2014 average. Files are named `temperature_Chicago_<model>_<scenario>_<simulation>.nc`.
+
+Files used in the lab:
+
+* `ssp370`: `CESM2` (`r4i1p1f1`), `MIROC6` (`r1i1p1f1`), `CanESM5` (`r1i1p1f1`), and `ACCESS-ESM1-5` (`r1i1p1f1`, `r4i1p1f1`, `r5i1p1f1`)
+* `ssp126`, `ssp245`, `ssp585`: `ACCESS-ESM1-5` (`r1i1p1f1`)
 
 
