@@ -54,16 +54,7 @@ Notebook: `Lab3_Hydrologic_Cycle_Changes.ipynb`
 
 ### SNOTEL snow water equivalent, Elk River, CO
 
-Daily snow water equivalent (SWE) measured at the Elk River SNOTEL station (site 467), north of Steamboat Springs in Routt County, CO. SNOTEL (Snow Telemetry) is an automated snow monitoring network run by the USDA Natural Resources Conservation Service (NRCS) across the western U.S. <https://www.nrcs.usda.gov/wps/portal/wcc/home/aboutUs/monitoringPrograms/automatedSnowMonitoring/>. Station page: <https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=467>
-
-SWE is the depth of water that would result if the snowpack were melted.
-
-* `Elk_River_SNOTEL_SWE.csv`: daily SWE at the Elk River station
-  * 17,529 daily values from 1978-10-01 to 2026-09-28 (water years 1979–2026; no missing values)
-  * Columns:
-    * `Date`: date in YYYY-MM-DD format
-    * `Water Year`: water year (October 1 – September 30) that the date belongs to, e.g. 1978-10-01 is in water year 1979
-    * `Snow Water Equivalent (in)`: snow water equivalent in inches. Values range from 0 to 30.8
+* `Elk_River_SNOTEL_SWE.csv`: Daily snow water equivalent (SWE) measured at the Elk River SNOTEL station (site 467), north of Steamboat Springs in Routt County, CO. Values for 1978-10-01 to 2026-09-28 (water years 1979–2026). Station page: <https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=467>
 
 ---
 
@@ -77,14 +68,7 @@ Daily Canadian Forest Fire Weather Index (FWI), 1970–2025, for the foothills a
 
 The FWI is a unitless index of fire danger calculated from daily temperature, relative humidity, wind speed, and recent precipitation, with higher values indicating weather conditions more favorable for fires to ignite and spread.
 
-* `fort_collins_fire_weather_index.csv`: daily FWI at a single location near Fort Collins, CO
-  * 20,454 daily values from 1970-01-01 to 2025-12-31 (no missing days)
-  * Columns:
-    * (unnamed first column): row index
-    * `date`: date in YYYY-MM-DD format
-    * `fwi`: Fire Weather Index (unitless). Values range from about 0 to 145; the median is about 6 and the 75th percentile is about 38
-
-Other files added for this lab but not currently used: `boulder_fire_weather_index.csv` and `fort_collins_weather_station_T_max.csv` (daily maximum temperature in °F).
+* `fort_collins_fire_weather_index.csv`: daily FWI at a single location near Fort Collins, CO (1970-01-01 to 2025-12-31)
 
 ---
 
@@ -94,18 +78,10 @@ Notebook: `Lab5_Extreme_Value_Theory.ipynb`
 
 ### Simulated hurricane winds for Mobile, AL
 
-Annual maximum hurricane wind speeds (m/s) at the center of Mobile, AL, from computer simulations of hurricanes conducted by Prof. Yanlin Guo and her graduate students in the CEE Department at CSU. Each simulation was run for 20,000 years. Only years with a hurricane are included in the files (about 9,700 years in each).
+Annual maximum hurricane wind speeds (m/s) at the center of Mobile, AL, from computer simulations of hurricanes conducted by Prof. Yanlin Guo. Each simulation was run for 20,000 years. Values correspond to maximum windspeed within ~20-year blocks of time 
 
-Files used in the lab (block maxima):
-
-* `hurricane_winds_2015_Mobile-AL_20yr_max.csv`: simulation of the present climate (Year 2015); 973 values
-* `hurricane_winds_2100_Mobile-AL_20yr_max.csv`: simulation of the future climate in Year 2100 under the SSP2-4.5 scenario; 970 values
-  * Column: `max_wind`, maximum wind speed (m/s) in each block. Each value is the maximum of 10 consecutive rows of the original files below (10 consecutive years with a hurricane, which is about 20 years of the simulation since only about half of simulated years have a hurricane). In the lab, each value is treated as a 20-year block maximum. Rows left over at the end of the original files were dropped (9 rows for 2100).
-
-Original files (not used in the lab):
-
-* `hurricane_winds_2015_Mobile-AL.csv` and `hurricane_winds_2100_Mobile-AL.csv`: annual maximum wind speed (m/s) in each simulated year that has a hurricane (column `max_wind`; 9,730 and 9,709 rows)
-
+* `hurricane_winds_2015_Mobile-AL_20yr_max.csv`: simulation of the present climate (Year 2015)
+* `hurricane_winds_2100_Mobile-AL_20yr_max.csv`: simulation of the future climate in Year 2100 under the SSP2-4.5 scenario
 
 
 ## Lab 6 — Future Climate Projections and Building Energy Use
